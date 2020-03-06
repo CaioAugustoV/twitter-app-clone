@@ -23,12 +23,14 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import Icon from 'react-native-vector-icons/Entypo';
 
 const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
+        <Icon name="comments" size={30} color="#900" />
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
