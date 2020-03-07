@@ -55,6 +55,7 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>MaterialCommunityIcons.ttf</string>
 		<string>Feather.ttf</string>
 		<string>AntDesign.ttf</string>
 		<string>Entypo.ttf</string>
