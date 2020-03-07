@@ -12,37 +12,30 @@ const AppNavigation = () => (
   <Tab.Navigator tabBar={props => <TabBar {...props} />}>
     <Tab.Screen
       options={{
-        tabBarLabel: 'Home',
+        tabBarLabel: 'home',
       }}
       name="Home"
       component={Home}
     />
     <Tab.Screen
       options={{
-        tabBarLabel: 'Visitante',
+        tabBarLabel: 'search',
       }}
-      name="menu"
+      name="Search"
       component={Home}
     />
     <Tab.Screen
       options={{
-        tabBarLabel: 'Comprar',
+        tabBarLabel: 'bell',
       }}
-      name="Cart"
+      name="Notificacoes"
       component={Home}
     />
     <Tab.Screen
       options={{
-        tabBarLabel: 'Scanner',
+        tabBarLabel: 'mail',
       }}
-      name="MyList"
-      component={Home}
-    />
-    <Tab.Screen
-      options={{
-        tabBarLabel: 'Mais',
-      }}
-      name="Account"
+      name="Menssage"
       component={Home}
     />
   </Tab.Navigator>

@@ -1,6 +1,7 @@
 import React from 'react';
-import Icon from 'react-native-vector-icons/Entypo';
+import Icon from 'react-native-vector-icons/Feather';
 import * as Style from './styled';
+import * as Colors from '../common/colors';
 
 const TabBar = ({state, descriptors, navigation}) => {
   return (
@@ -34,7 +35,7 @@ const TabBar = ({state, descriptors, navigation}) => {
               target: route.key,
             });
           };
-          
+
           return (
             <Style.ContainerIcon
               key={index}
@@ -45,7 +46,7 @@ const TabBar = ({state, descriptors, navigation}) => {
               onPress={onPress}
               onLongPress={onLongPress}
             >
-              <Icon name="comments" size={30} color="#900" />
+              <Icon name={label} solid size={30} color={Colors.primary} />
             </Style.ContainerIcon>
           )
         })}
