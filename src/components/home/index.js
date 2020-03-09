@@ -1,5 +1,6 @@
 import React from 'react';
 import * as Style from './styled';
+import Header from './header';
 import * as Colors from '../common/colors';
 import IconAnt from 'react-native-vector-icons/AntDesign';
 import IconFeather from 'react-native-vector-icons/Feather';
@@ -9,11 +10,29 @@ const HomePage = () => {
   return (
     <Style.Container>
       <Style.SafeAreaView>
-        <Style.Header>
-          <IconFeather name='menu' size={32} color={Colors.primary} />
-          <IconAnt name='twitter' size={30} color={Colors.primary} />
-          <IconMaterial name='star-four-points-outline' size={32} color={Colors.primary} />
-        </Style.Header>
+        <Header />
+        <Style.Fleet>
+          <Style.UserFleet>
+            <Style.PhotoFleet source={{uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png'}} />
+            <Style.BallFleet />
+            <Style.BallSmallFleet />
+            <Style.AddFleet>
+              <Style.IconFleet>
+                <Style.TextAddFleet>+</Style.TextAddFleet>
+              </Style.IconFleet>
+            </Style.AddFleet>
+          </Style.UserFleet>
+          <Style.UserFleet>
+            <Style.PhotoFleet source={{uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png'}} />
+            <Style.BallFleet />
+            <Style.BallSmallFleet />
+          </Style.UserFleet>
+          <Style.UserFleet>
+            <Style.PhotoFleet source={{uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png'}} />
+            <Style.BallFleet />
+            <Style.BallSmallFleet />
+          </Style.UserFleet>
+        </Style.Fleet>
       </Style.SafeAreaView>
     </Style.Container>
   )
