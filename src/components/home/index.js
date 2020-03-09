@@ -1,7 +1,8 @@
 import React from 'react';
 import * as Style from './styled';
 import Header from './Header';
-import Fleet from './Fleet'
+import Fleet from './Fleet';
+import Feed from './Feed';
 
 const HomePage = () => {
   return (
@@ -9,6 +10,7 @@ const HomePage = () => {
       <Style.SafeAreaView>
         <Header />
         <Fleet />
+        <Feed />
       </Style.SafeAreaView>
     </Style.Container>
   )
