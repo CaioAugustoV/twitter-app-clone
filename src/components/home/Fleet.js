@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Style from './styled/fleet';
 
-const HomePage = () => {
+const Fleet = () => {
   return (
     <Style.Fleet>
       <Style.UserFleet>
@@ -28,4 +28,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage;
+export default Fleet;

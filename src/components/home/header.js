@@ -5,7 +5,7 @@ import IconAnt from 'react-native-vector-icons/AntDesign';
 import IconFeather from 'react-native-vector-icons/Feather';
 import IconMaterial from 'react-native-vector-icons/MaterialCommunityIcons';
 
-const HomePage = () => {
+const Header = () => {
   return (
     <Style.Header>
       <IconFeather name='menu' size={32} color={Colors.primary} />
@@ -15,4 +15,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage;
+export default Header;
