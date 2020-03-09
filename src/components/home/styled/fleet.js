@@ -3,14 +3,18 @@ import * as Colors from '../../common/colors';
 import { StyleSheet } from 'react-native'
 
 export const Fleet = styled.View(props => ({
-  borderBottomWidth: StyleSheet.hairlineWidth,
-  borderBottomColor: Colors.gray,
   flexDirection: 'row',
   alignItems: 'center',
   justifyContent: 'flex-start',
   width: '100%',
   paddingHorizontal: '2.5%',
   paddingVertical: 10,
+}))
+
+export const FleetScroll = styled.ScrollView(props => ({
+  flexDirection: 'row',
+  borderBottomWidth: StyleSheet.hairlineWidth,
+  borderBottomColor: Colors.gray,
 }))
 
 export const UserFleet = styled.TouchableOpacity(props => ({
